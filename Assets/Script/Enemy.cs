@@ -21,7 +21,7 @@ public class Enemy : MonoBehaviour
     private float amplitude = 1f;
     private float frequency = 1f;
     private float initialX;
-    private float jumpInterval = 4f;
+    private float jumpInterval = 2f;
     private float timeSinceLastJump;
 
     [SerializeField] private Animator anim;
@@ -86,7 +86,7 @@ public class Enemy : MonoBehaviour
         if (isGrounded && timeSinceLastJump > jumpInterval)
         {
             anim.SetTrigger("Jump");
-            rb.velocity = new Vector2(-2f, 5f);
+            rb.velocity = new Vector2(-speed, 5f);
             timeSinceLastJump = 0;
         }   
     }

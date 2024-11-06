@@ -123,7 +123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyName: Frog
   movement: 3
-  speed: 2
+  speed: 5
   anim: {fileID: 6541737665377025706}
 --- !u!50 &9032285587397942413
 Rigidbody2D:

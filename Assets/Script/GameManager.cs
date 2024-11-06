@@ -53,7 +53,7 @@ public class GameManager : MonoBehaviour
     {
         if (isPlaying) {
             UpdateScore();
-            if(CurrentScore > 50 && IsLevel1 && !loadNextLevel)
+            if(CurrentScore > 120 && IsLevel1 && !loadNextLevel)
             {
                 loadNextLevel = true;
                 LevelLoader.Instance.LoadLevel(2);
